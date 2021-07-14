@@ -1,0 +1,25 @@
+{
+	"name": "tr_ingest_hospital_admissions",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pl_hospital_admissions",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Day",
+				"interval": 1,
+				"startTime": "2021-07-13T10:26:00Z",
+				"endTime": "2021-07-15T10:26:00Z",
+				"timeZone": "UTC"
+			}
+		}
+	}
+}
