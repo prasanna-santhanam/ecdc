@@ -1,0 +1,24 @@
+{
+	"name": "tr_country_and_deaths",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pl_country_and_deaths",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 5,
+				"startTime": "2021-07-11T17:47:00Z",
+				"timeZone": "UTC"
+			}
+		}
+	}
+}
